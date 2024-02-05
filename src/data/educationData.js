@@ -2,15 +2,15 @@ export const educationData = [
     {
         id: 1,
         institution: 'Arizona State University',
-        course: 'Computer Software Engineering',
-        startYear: '2022',
-        endYear: '2024'
+        course: 'Masters of Science in Computer Software Engineering',
+        startYear: 'August 2022 ',
+        endYear: ' May 2024'
     },
     {
         id: 2,
         institution: 'Jain University',
-        course: 'Computer Science and Engineering',
-        startYear: '2016',
-        endYear: '2020'
+        course: 'Bachlor of Technology in Computer Science',
+        startYear: 'August 2016 ',
+        endYear: ' June 2020'
     },
 ]

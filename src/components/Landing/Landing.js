@@ -23,15 +23,14 @@ function Landing() {
     const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,
-            borderRadius: '30px',
             textTransform: 'inherit',
             textDecoration: 'none',
-            width: '150px',
+            width: '250px',
             fontSize: '1rem',
             fontWeight: '500',
             height: '50px',
             fontFamily: 'var(--primaryFont)',
-            border: `3px solid ${theme.primary}`,
+            border: `3px solid rgb(84 15 15)`,
             transition: '100ms ease-out',
             '&:hover': {
                 backgroundColor: theme.tertiary,
@@ -43,9 +42,9 @@ function Landing() {
             },
         },
         contactBtn: {
-            backgroundColor: theme.primary,
+            backgroundColor: 'rgb(84 15 15)',
+            marginLeft:'10px',
             color: theme.secondary,
-            borderRadius: '30px',
             textTransform: 'inherit',
             textDecoration: 'none',
             width: '150px',
@@ -53,7 +52,7 @@ function Landing() {
             fontSize: '1rem',
             fontWeight: '500',
             fontFamily: 'var(--primaryFont)',
-            border: `3px solid ${theme.primary}`,
+            border: `3px solid rgb(84 15 15)`,
             transition: '100ms ease-out',
             '&:hover': {
                 backgroundColor: theme.secondary,

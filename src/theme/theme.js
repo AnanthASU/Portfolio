@@ -139,12 +139,12 @@ export const blueThemeDark = {
 
 export const redThemeLight = {
     type: 'light',
-    primary: '#f03939',
+    primary: 'rgb(84 15 15)',
     primary400: '#dd4d4d',
     primary600: '#ea2424',
     primary80: '#f03939cc',
     primary50: '#f0393980',
-    primary30: '#f039394d',
+    primary30: 'transparent',
     secondary: '#eaeaea',
     secondary70: '#eaeaeab3',
     secondary50: '#eaeaea80',
@@ -160,7 +160,7 @@ export const redThemeLight = {
 }
 export const redThemeDark = {
     type: 'dark',
-    primary: '#f03939',
+    primary: 'rgb(84 15 15)',
     primary400: '#dd4d4d',
     primary600: '#ea2424',
     primary80: '#f03939cc',

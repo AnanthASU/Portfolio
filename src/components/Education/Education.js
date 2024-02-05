@@ -6,6 +6,7 @@ import './Education.css'
 import EducationCard from './EducationCard';
 
 import { educationData } from '../../data/educationData'
+import asu from '../../assets/png/asu_back.png'
 
 function Education() {
 
@@ -15,7 +16,7 @@ function Education() {
            
             <div className="education-body">
                 <div className="education-description">
-                <h1 style={{color:theme.primary}}>Education</h1>
+                <h1 style={{color:theme.primary}} className='title'>Education</h1>
                     {educationData.map(edu => (
                         <EducationCard 
                             key={edu.id}
@@ -28,7 +29,7 @@ function Education() {
                     ))}
                 </div>
                 <div className="education-image">
-                    <img src={theme.eduimg} alt=""/>
+                    <img src={asu} alt=""/>
                 </div>
             </div>
         </div>

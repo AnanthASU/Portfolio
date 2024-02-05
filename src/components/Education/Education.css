@@ -36,7 +36,6 @@
     width: 90%;
     height: 140px;
     padding: 1.5rem;
-    border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
 }
@@ -49,26 +48,44 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    background-color: transparent !important;
 }
 
 .educard-img > img {
-    width: 40px;
+    width: 70px;
 }
 
+.education-wrap{
+    display:flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.course{
+    padding-left: 10px;
+    color: rgb(63 63 70) !important;
+    font-weight: 500 !important;
+}
 .education-details{
     margin-left: 0.6rem;
 }
 
-.education-details > h6 {
+.education-details > h2 {
     font-family: var(--primaryFont);
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    width:400px;
+}
+
+.year{
+    color: rgb(160 160 170) !important;
+    font-weight: 500;
 }
 
 .education-details > h4 {
     font-family: var(--primaryFont);
-    font-size: 1.225rem;
     font-weight: 600;
 }
 
@@ -76,6 +93,15 @@
     font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
+    color:black;
+}
+
+.uni{
+    width:450px;
+}
+
+.title{
+    color: rgb(84 15 15) !important;
 }
 
 .education-image {
