@@ -53,6 +53,7 @@
 
 .educard-img > img {
     width: 70px;
+    margin-right:10px;
 }
 
 .education-wrap{
@@ -69,6 +70,7 @@
 }
 .education-details{
     margin-left: 0.6rem;
+    border-left: 1px solid rgb(84 15 15);
 }
 
 .education-details > h2 {

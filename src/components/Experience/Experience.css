@@ -51,12 +51,14 @@
 }
 
 .expcard-img > img {
-    width: 36px;
+    width: 40px;
+    margin-right: 10px;
     pointer-events: none;
 }
 
 .experience-details {
     margin-left: 0.6rem;
+    border-left: 1px solid rgb(84 15 15) !important;
 }
 
 .experience-details > h6 {
@@ -138,13 +140,13 @@
         height: 130px;
     }
     .expcard-img {
-        border-radius: 50%;
         width: 45px;
         height: 45px;
     }
     
     .expcard-img > img {
-        width: 30px;
+        width: 70px;
+        margin-right:10px;
     }
     .experience-details > h6 {
         font-size: 0.85rem;
@@ -225,3 +227,26 @@
     color: #999; /* Adjust the color accordingly */
     float: right;
   }
+
+  
+.education-wrap{
+    display:flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.course{
+    padding-left: 10px;
+    color: rgb(63 63 70) !important;
+    font-weight: 500 !important;
+}
+
+.year{
+    color: rgb(160 160 170) !important;
+    font-weight: 500;
+}
+
+.uni{
+    width:450px;
+}

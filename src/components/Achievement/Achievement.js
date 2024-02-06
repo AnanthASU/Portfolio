@@ -4,6 +4,7 @@ import './Achievement.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { achievementData } from '../../data/achievementData'
 import AchievementCard from './AchievementCard';
+import hackathon from '../../assets/png/hackathon.jpg';
 
 function Achievement() {
 
@@ -25,7 +26,7 @@ function Achievement() {
                         details={achieve.details}
                         date={achieve.date}
                         field={achieve.field}
-                        image={achieve.image}/>
+                        image={achieve.id === 1 ? achieve.image : hackathon}/>
                     ))}
                 </div>
             </div>

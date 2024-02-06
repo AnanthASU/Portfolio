@@ -6,6 +6,8 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 import expImgWhite from '../../assets/svg/experience/expImgWhite.svg'
 import expImgBlack from '../../assets/svg/experience/expImgBlack.svg'
+import teradata from '../../assets/png/teradata_logo.jpg';
+import vl from '../../assets/png/valuelabs_logo.jpg';
 
 import './Experience.css'
 
@@ -27,14 +29,16 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
 
     return (
         <Fade bottom>
-            <div key={id} className={`experience-card ${classes.experienceCard}`}>
-                <div className="expcard-img" style={{backgroundColor: theme.primary}}>
-                    <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" />
+            <div key={id} className={`experience-card`}>
+                <div className="expcard-img" >
+                    <img src={id === 1 ? teradata : vl} alt="" />
                 </div>
                 <div className="experience-details">
-                    <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
-                    <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
-                    <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                <div className='education-wrap'>
+                <h1 style={{color: theme.tertiary80}} className='uni'>{company}</h1>
+                    <h4 style={{color: theme.primary}} className='year'>{startYear}-{endYear}</h4>
+                    </div>
+                    <h4 style={{color: theme.tertiary}} className='course'>{jobtitle}</h4>
                 </div>
             </div>
         </Fade>   
