@@ -29,18 +29,46 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
 
     return (
         <Fade bottom>
-            <div key={id} className={`experience-card`}>
-                <div className="expcard-img" >
-                    <img src={id === 1 ? teradata : vl} alt="" />
+             <div className='exp-multi'>
+                 <div className="expcard-img" >
+                 <img src={teradata} alt="" />
                 </div>
-                <div className="experience-details">
+                 <div className="experience-details">
+                <h1 style={{color: theme.tertiary80}} className='uni'>Teradata</h1>
+                <div className='exp-wr'>
                 <div className='education-wrap'>
-                <h1 style={{color: theme.tertiary80}} className='uni'>{company}</h1>
-                    <h4 style={{color: theme.primary}} className='year'>{startYear}-{endYear}</h4>
+                    <h4 style={{color: theme.tertiary}} className='course'>Software Engineer Intern</h4>
+                    <h4 style={{color: theme.primary}} className='year'>May 2023 - December 2023</h4>
                     </div>
-                    <h4 style={{color: theme.tertiary}} className='course'>{jobtitle}</h4>
+                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    </div>
                 </div>
-            </div>
+                </div>
+                 <div className='exp-multi'>
+                 <div className="expcard-img" >
+                 <img src={vl} alt="" />
+                </div>
+                 <div className="experience-details">
+                <h1 style={{color: theme.tertiary80}} className='uni'>ValueLabs</h1>
+                <div className='exp-wr'>
+                <div className='education-wrap'>
+                    <h4 style={{color: theme.tertiary}} className='course'>Senior Software Engineer</h4>
+                    <h4 style={{color: theme.primary}} className='year'>March 2022- July 2022</h4>
+                    </div>
+                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    <div className='education-wrap'>
+                    <h4 style={{color: theme.tertiary}} className='course'>Software Engineer</h4>
+                    <h4 style={{color: theme.primary}} className='year'>June 2020 - March 2022</h4>
+                    </div>
+                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    <div className='education-wrap'>
+                    <h4 style={{color: theme.tertiary}} className='course'>Software Engineer Intern</h4>
+                    <h4 style={{color: theme.primary}} className='year'>January 2020 - May 2020</h4>
+                    </div>
+                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    </div>
+                </div>
+                </div>
         </Fade>   
     )
 }

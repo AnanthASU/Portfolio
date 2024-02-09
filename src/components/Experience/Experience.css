@@ -58,7 +58,6 @@
 
 .experience-details {
     margin-left: 0.6rem;
-    border-left: 1px solid rgb(84 15 15) !important;
 }
 
 .experience-details > h6 {
@@ -234,19 +233,51 @@
     align-items: center;
     padding-bottom: 10px;
     padding-left: 10px;
+    border-left: 2px solid rgb(84 15 15);
+
 }
 
 .course{
     padding-left: 10px;
     color: rgb(63 63 70) !important;
     font-weight: 500 !important;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .year{
-    color: rgb(160 160 170) !important;
+    color: black !important;
     font-weight: 500;
+    margin-left: auto;
 }
 
 .uni{
     width:450px;
+    Margin-bottom:10px;
+}
+
+.exp-multi{
+    display: flex;
+    flex-direction: row;
+    padding:40px;
+    width: 100%;
+}
+
+.exp-wr{
+    margin-left:10px;
+    width: 70%
+}
+
+.exp-bdy{
+    width: 100%;
+}
+.exp-txt{
+    margin-left:30px;
+    width: 60%;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.hesd{
+    margin-right: auto;
 }

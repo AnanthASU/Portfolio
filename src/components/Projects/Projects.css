@@ -50,6 +50,7 @@
 }
 
 .projects--viewAll a button {
+    color:aliceblue !important;
     outline: none;
     border: none;
     width: 150px;
