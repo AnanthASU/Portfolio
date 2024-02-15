@@ -141,6 +141,7 @@ function Navbar() {
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
+                    size={20}
                 />
             </div>
             <Drawer
@@ -223,7 +224,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                        Education
                                     </span>
                                 </div>
                             </NavLink>

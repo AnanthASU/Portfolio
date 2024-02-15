@@ -55,17 +55,17 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
                     <h4 style={{color: theme.tertiary}} className='course'>Senior Software Engineer</h4>
                     <h4 style={{color: theme.primary}} className='year'>March 2022- July 2022</h4>
                     </div>
-                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    <div className='exp-txt'>Part of the Mitchell Internationl Connect Team, contributing to the development of MI Trends product for report generation of Casualty Support Group(CSG).</div>
                     <div className='education-wrap'>
                     <h4 style={{color: theme.tertiary}} className='course'>Software Engineer</h4>
                     <h4 style={{color: theme.primary}} className='year'>June 2020 - March 2022</h4>
                     </div>
-                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    <div className='exp-txt'>Part of the Mitchell Internationl Connect Team, contributing to the development of MI Trends product for report generation of Auto Physical Damage(APD).</div>
                     <div className='education-wrap'>
                     <h4 style={{color: theme.tertiary}} className='course'>Software Engineer Intern</h4>
                     <h4 style={{color: theme.primary}} className='year'>January 2020 - May 2020</h4>
                     </div>
-                    <div className='exp-txt'>Part of the Lake Console UI Team, contributing to the development of Teradata's Vantage Lake product, focusing on the web-facing interface.</div>
+                    <div className='exp-txt'>Part of Mitchell International Connect, our Learning Tech stack includes React, Redux, and C# for frontend, middleware, and PostgreSQL SQL for backend.</div>
                     </div>
                 </div>
                 </div>
