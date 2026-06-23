@@ -1,42 +1,26 @@
-# Anantharama Raju Muppala — AI Full-Stack Portfolio
+# Anantharama Raju Muppala — 3D AI Full-Stack Portfolio
 
-Static portfolio site built from the AI Full-Stack resume content.
+This is a GitHub Pages-ready static portfolio inspired by the referenced 3D developer portfolio style. It uses plain HTML, CSS, and JavaScript, with a lightweight Three.js scene loaded from CDN for the hero visual.
 
-## Files
+## What is customized
 
-- `index.html` — main portfolio page
-- `styles.css` — responsive dark AI-themed styling
-- `script.js` — mobile navigation, reveal animations, project filters, copy-email button
-- `assets/Anantha_Raju_Muppala_Resume.pdf` — downloadable resume
-- `assets/profile-placeholder.svg` — replace with your photo
-- `assets/project-placeholder.svg` — replace with project screenshots
-
-## Edit placeholders
-
-Search for `placeholder` in `index.html` and replace:
-
-- project live demo URLs
-- GitHub repository URLs
-- Hugging Face / deployment links
-- blog or case study links
-- profile image
-- certification details, if you want them
+- Hero and positioning for AI Full-Stack Engineer / AI Engineer roles
+- Enlyte, Teradata, and ValueLabs experience
+- AI-assisted SDLC workflows, RAG-ready systems, full-stack engineering, and cloud-native backend positioning
+- Projects: AI SDLC Agent Prototype, GitView, ML Test Case Reduction, Personalized News Recommender
+- Placeholders for project demos, screenshots, repo links, certifications, and profile media
 
 ## Deploy to GitHub Pages
 
-1. Create a repository, for example `portfolio` or `AnanthASU.github.io`.
-2. Upload these files to the repository root.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from a branch**.
-5. Select `main` branch and `/root` folder.
-6. Save. GitHub will publish the site in a few minutes.
+Copy these files into the root of your `AnanthASU/Portfolio` repository, commit, and push to the branch configured under GitHub Pages.
 
-## Local preview
+Your repository root should contain:
 
-Open `index.html` directly in a browser, or run:
-
-```bash
-python -m http.server 8080
+```text
+index.html
+styles.css
+script.js
+README.md
 ```
 
-Then visit `http://localhost:8080`.
+Then set GitHub Pages to use the repository root.
