@@ -1,60 +1,43 @@
 # Anantharama Raju Muppala — 3D AI Full-Stack Portfolio
 
-A lightweight static portfolio for GitHub Pages with a free, browser-only AI portfolio assistant.
+This is a GitHub Pages-ready static portfolio inspired by the referenced 3D developer portfolio style. It uses plain HTML, CSS, and JavaScript, with a lightweight Three.js scene loaded from CDN for the hero visual.
 
-## What is included
+## What is customized
 
-- Clean 3D-inspired portfolio layout
-- Pure CSS interactive human/avatar figure
-- Recruiter-focused AI Full-Stack Engineer content
-- Floating "Ask Ananth AI" chat assistant
-- No backend, no API key, no paid model
-- Local structured knowledge base in `script.js`
-- Works on GitHub Pages
-
-## AI assistant approach
-
-The assistant is intentionally lightweight and free. It does not call OpenAI, Claude, Gemini, or any remote API. It answers from local resume/project data using keyword/intent matching in JavaScript.
-
-You can customize answers by editing the `profileKnowledge` array in `script.js`.
+- Hero and positioning for AI Full-Stack Engineer / AI Engineer roles
+- Enlyte, Teradata, and ValueLabs experience
+- AI-assisted SDLC workflows, RAG-ready systems, full-stack engineering, and cloud-native backend positioning
+- Projects: AI SDLC Agent Prototype, GitView, ML Test Case Reduction, Personalized News Recommender
+- Placeholders for project demos, screenshots, repo links, certifications, and profile media
 
 ## Deploy to GitHub Pages
 
-Copy these files into your `AnanthASU/Portfolio` repo:
+Copy these files into the root of your `AnanthASU/Portfolio` repository, commit, and push to the branch configured under GitHub Pages.
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `404.html`
-- `README.md`
-
-Then run:
-
-```powershell
-git add .
-git commit -m "Add lightweight AI portfolio assistant"
-git push -u origin HEAD:main --force-with-lease
-```
-
-In GitHub, set Pages to:
-
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /root
-
-Open:
+Your repository root should contain:
 
 ```text
-https://AnanthASU.github.io/Portfolio/?v=assistant
+index.html
+styles.css
+script.js
+README.md
 ```
 
-## Placeholder notes
+Then set GitHub Pages to use the repository root.
 
-Add later when ready:
 
-- Real profile photo or custom avatar
-- Resume PDF link
-- Live project demo links
-- GitHub repo links for each project
-- Blog/case study pages
-- Optional real RAG/LLM backend using Vercel or Cloudflare Workers
+## AI Agent Lab update
+
+This version adds a professional astronomy-inspired **AI Agent Lab** section featuring the CI/CD Failure Triage Agent.
+
+Update this link in `index.html` after Streamlit deployment:
+
+```html
+https://cicd-triage-agent-ife5455wtbmykud5htumeb.streamlit.app/
+```
+
+Live CI/CD Failure Triage Agent:
+- `https://cicd-triage-agent-ife5455wtbmykud5htumeb.streamlit.app/`
+
+Suggested GitHub repo:
+- `https://github.com/AnanthASU/cicd-triage-agent`

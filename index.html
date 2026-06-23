@@ -6,7 +6,7 @@
     <title>Anantharama Raju Muppala | AI Full-Stack Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Anantharama Raju Muppala — AI Full-Stack Engineer building cloud-native systems, full-stack products, AI-assisted developer workflows, RAG-ready services, and production-quality web applications."
+      content="Portfolio of Anantharama Raju Muppala — AI Full-Stack Engineer building cloud-native systems, full-stack products, AI-assisted developer workflows, CI/CD failure triage agents, RAG-ready services, and production-quality web applications."
     />
     <meta property="og:title" content="Anantharama Raju Muppala | AI Full-Stack Engineer" />
     <meta property="og:description" content="Cloud-native full-stack engineer focused on AI-ready systems, developer agents, RAG-ready data foundations, and enterprise product delivery." />
@@ -33,6 +33,7 @@
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
+          <a href="#ai-agents">AI Agents</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
@@ -171,12 +172,141 @@
           </div>
         </section>
 
+
+        <section class="section agent-lab-section" id="ai-agents">
+          <div class="section-heading reveal">
+            <span class="section-kicker">AI Agent Lab</span>
+            <h2>Practical agents for real engineering workflows.</h2>
+            <p class="section-subtitle">
+              I’m building small, useful AI systems that solve everyday engineering problems before scaling them into production-grade workflows.
+              The first agent focuses on CI/CD failure triage for Jenkins-style logs.
+            </p>
+          </div>
+
+          <div class="agent-spotlight reveal">
+            <div class="agent-copy">
+              <div class="project-tag">Live project • Developer productivity</div>
+              <h3>CI/CD Failure Triage Agent</h3>
+              <p>
+                A lightweight AI engineering project that analyzes Jenkins and CI/CD logs, classifies build failures,
+                retrieves known fixes, and generates developer-ready remediation reports. It is designed as a safe,
+                human-in-the-loop agent that helps engineers understand failures faster without automatically changing code.
+              </p>
+
+              <div class="agent-actions">
+                <a href="https://github.com/AnanthASU/cicd-triage-agent" target="_blank" rel="noreferrer" class="agent-button primary">
+                  View GitHub Repo
+                </a>
+                <a href="https://cicd-triage-agent-ife5455wtbmykud5htumeb.streamlit.app/" target="_blank" rel="noreferrer" class="agent-button secondary">
+                  Open Live Demo
+                </a>
+              </div>
+
+              <div class="tech-stack agent-tech">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Jenkins Logs</span>
+                <span>Agentic Workflow</span>
+                <span>Known-Fix Retrieval</span>
+                <span>CI/CD</span>
+              </div>
+            </div>
+
+            <div class="agent-console" aria-label="CI/CD triage agent output preview">
+              <div class="console-top">
+                <span></span><span></span><span></span>
+                <strong>triage-report.md</strong>
+              </div>
+              <pre><code>Category: Frontend test failure
+Confidence: 0.88
+
+Signals:
+• TestingLibraryElementError
+• Unable to find element
+• Jest expectation mismatch
+
+Likely cause:
+Changed DOM, async rendering,
+mock data, or missing provider.
+
+Recommended next step:
+Use findBy*/waitFor and verify
+Redux/router/i18n test wrapper.</code></pre>
+            </div>
+          </div>
+
+          <div class="architecture-card reveal">
+            <div class="architecture-heading">
+              <span class="section-kicker">Architecture</span>
+              <h3>How the triage agent works</h3>
+            </div>
+
+            <div class="agent-flow" aria-label="CI/CD failure triage architecture">
+              <div class="flow-node">
+                <strong>1</strong>
+                <h4>Ingest logs</h4>
+                <p>Paste or upload Jenkins / CI console output.</p>
+              </div>
+              <div class="flow-connector"></div>
+              <div class="flow-node">
+                <strong>2</strong>
+                <h4>Extract signals</h4>
+                <p>Find errors, stack traces, test failures, infra issues, and schema failures.</p>
+              </div>
+              <div class="flow-connector"></div>
+              <div class="flow-node">
+                <strong>3</strong>
+                <h4>Classify failure</h4>
+                <p>Map signals to frontend test, TypeScript, .NET, npm, flaky, or infra categories.</p>
+              </div>
+              <div class="flow-connector"></div>
+              <div class="flow-node">
+                <strong>4</strong>
+                <h4>Retrieve fixes</h4>
+                <p>Match known issues and prevention steps from a local knowledge base.</p>
+              </div>
+              <div class="flow-connector"></div>
+              <div class="flow-node">
+                <strong>5</strong>
+                <h4>Generate report</h4>
+                <p>Create a Markdown report and Teams-ready developer summary.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="agent-benefits reveal">
+            <article>
+              <span>01</span>
+              <h3>Why it matters</h3>
+              <p>Engineering teams lose time scanning long CI logs. This agent shortens the path from failure to root-cause hypothesis.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Why it is safe</h3>
+              <p>The MVP is read-only. It suggests actions and explains evidence, but keeps code changes and deployment decisions with humans.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Next evolution</h3>
+              <p>Add PR diff analysis, GitHub/Jenkins APIs, RAG over historical fixes, confidence thresholds, and Teams notifications.</p>
+            </article>
+          </div>
+        </section>
+
+
         <section class="section" id="projects">
           <div class="section-heading reveal">
             <span class="section-kicker">Projects</span>
             <h2>Selected AI, cloud, and full-stack work.</h2>
           </div>
           <div class="project-grid">
+            <article class="project-card reveal featured-project">
+              <div class="project-tag">AI Agent • CI/CD</div>
+              <h3>CI/CD Failure Triage Agent</h3>
+              <p>Free, local-first agent that analyzes Jenkins/CI logs, detects failure patterns, retrieves known fixes, and produces Markdown triage reports for developers.</p>
+              <div class="tech-stack"><span>Python</span><span>Streamlit</span><span>Jenkins</span><span>Agentic AI</span><span>DevTools</span></div>
+              <a href="https://github.com/AnanthASU/cicd-triage-agent" target="_blank" rel="noreferrer">View repo →</a>
+            </article>
             <article class="project-card reveal">
               <div class="project-tag">AI + DevTools</div>
               <h3>AI SDLC Agent Prototype</h3>
@@ -236,7 +366,7 @@
         <section class="section contact-section" id="contact">
           <div class="contact-card reveal">
             <span class="section-kicker">Contact</span>
-            <h2>Let’s build reliable AI-enabled products.</h2>
+            <h2>Let’s build useful agents, reliable platforms, and AI-enabled products.</h2>
             <p>Open to AI Engineer, Full-Stack Engineer, Forward-Deployed Engineer, and Applied AI roles.</p>
             <div class="contact-links">
               <a href="mailto:amuppal1@asu.edu">amuppal1@asu.edu</a>

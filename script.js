@@ -109,12 +109,17 @@ const profileKnowledge = [
   {
     intent: 'projects',
     keywords: ['project', 'projects', 'portfolio', 'github', 'gitview', 'ml', 'machine learning', 'news recommender', 'test case'],
-    answer: `Projects to notice: 1) AI SDLC Agent Prototype — a concept workflow for ticket/PR summaries, repo search, test suggestions, Jenkins failure triage, and Teams notifications. 2) GitView — a GitHub analytics app with OAuth, contributor insights, commit/PR analysis, date filtering, Excel upload, and dashboards. 3) ML Test Case Reduction — a research-style ML pipeline using Random Forest, KMeans, Decision Trees, adequacy scoring, and labels to reduce redundant tests while preserving coverage. 4) Personalized News Recommender — a React/Redux/MongoDB/Python recommendation system using content-based ML.`
+    answer: `Projects to notice: 1) CI/CD Failure Triage Agent — a Streamlit/Python agent that classifies Jenkins build failures and generates developer-ready remediation reports. 2) AI SDLC Agent Prototype — a concept workflow for ticket/PR summaries, repo search, test suggestions, Jenkins failure triage, and Teams notifications. 2) GitView — a GitHub analytics app with OAuth, contributor insights, commit/PR analysis, date filtering, Excel upload, and dashboards. 3) ML Test Case Reduction — a research-style ML pipeline using Random Forest, KMeans, Decision Trees, adequacy scoring, and labels to reduce redundant tests while preserving coverage. 4) Personalized News Recommender — a React/Redux/MongoDB/Python recommendation system using content-based ML.`
   },
   {
     intent: 'ai',
     keywords: ['ai', 'agent', 'agents', 'rag', 'llm', 'semantic', 'copilot', 'genai', 'artificial intelligence'],
     answer: `Ananth is positioning toward AI Engineering by combining full-stack engineering with practical AI workflows. His strongest AI story is not "deployed production GenAI at every job"; it is more believable and useful: he builds reliable full-stack/cloud systems that can support semantic search, RAG, compliance assistants, tool-calling integrations, and AI-assisted developer workflows. He is also building portfolio projects around local AI assistants, SDLC agents, and RAG-ready product experiences.`
+  },
+  {
+    intent: 'cicd-agent',
+    keywords: ['ci', 'cd', 'cicd', 'jenkins', 'build failure', 'triage', 'failure', 'streamlit', 'logs', 'agent lab'],
+    answer: `Ananth is building a CI/CD Failure Triage Agent as an AI Engineering portfolio project. It analyzes Jenkins/CI logs, extracts error signals, classifies failures like Jest/RTL, TypeScript, .NET, npm, schema, flaky timeout, memory, and infrastructure issues, retrieves known fixes from a local knowledge base, and generates Markdown reports plus Teams-ready summaries. The MVP is free, local-first, read-only, and human-in-the-loop; future versions can connect to Jenkins/GitHub APIs, PR diffs, RAG over historical fixes, and Teams notifications.`
   },
   {
     intent: 'education',
@@ -227,4 +232,17 @@ chatForm?.addEventListener('submit', (event) => {
   addMessage('user', question);
   chatInput.value = '';
   setTimeout(() => addMessage('bot', getAssistantAnswer(question)), 280);
+});
+
+
+// Gentle astronomy interaction for agent architecture cards.
+document.querySelectorAll('.flow-node').forEach((node) => {
+  node.addEventListener('mouseenter', () => {
+    node.style.borderColor = 'rgba(103, 232, 249, 0.42)';
+    node.style.transform = 'translateY(-3px)';
+  });
+  node.addEventListener('mouseleave', () => {
+    node.style.borderColor = 'rgba(103,232,249,0.18)';
+    node.style.transform = 'translateY(0)';
+  });
 });
